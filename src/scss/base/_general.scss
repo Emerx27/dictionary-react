@@ -1,0 +1,55 @@
+@use "variables" as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-size: 16px;
+    /* 1rem = 10px */
+    background-color: v.$darkGray;
+    color: v.$white;
+    font-family: "DM Sans", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+[class$="container"] {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 1rem 0;
+}
+
+p {
+    line-height: 1.5;
+}
